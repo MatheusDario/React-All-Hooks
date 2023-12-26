@@ -18,7 +18,7 @@ export const Posts = () => {
 
   useEffect(() => {
     loadPosts(postsDispatch).then((dispatch) => {
-      if (isMounted.current) {
+      if (!isMounted.current) {
         dispatch();
       }
     });
