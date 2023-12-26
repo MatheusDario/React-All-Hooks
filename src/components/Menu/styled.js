@@ -2,5 +2,11 @@
 import styled, { css } from 'styled-components';
 
 export const Container = styled.nav`
-  ${({ theme }) => css``}
+  ${({ theme }) => css`
+   a {
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 30px;
+   }
+  `}
 `;
